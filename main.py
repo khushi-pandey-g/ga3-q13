@@ -43,7 +43,7 @@ async def get_sum(url):
         return table_sum
 
 async def main():
-    seeds = range(0, 10)
+    seeds = range(55, 65)
     total_sum = 0
     for seed in seeds:
         url = f"https://sanand0.github.io/tdsdata/js_table/?seed={seed}"
@@ -56,4 +56,5 @@ async def main():
     print(f"Total sum: {total_sum}")
 
 if __name__ == "__main__":
+
     asyncio.run(main())
